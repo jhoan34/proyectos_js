@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(56.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%
+    
+    
+}
+
+.caja1{
+    position: relative;
+    min-width: 300px;
+    border: 2px solid red;
+    width: 600px;
+    height: 600px; 
+    background-color: rgb(13, 12, 12);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.dado {
+
+    border: 2px solid blueviolet;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.point{
+    visibility: visible;
+    position: absolute;
+    width: 355px; 
+    height: 415px;
+}
+
+img{
+    visibility: hidden;
+    width: 59px;
+    height: 100px;
+    
+}
+
+.input{
+    position: relative;
+    border: 2px solid blueviolet;
+    height: 70%;
+    width: 30%
+}
+
+.lop{
+    position: absolute;
+    top: 50%;
+    margin: 10px;
+    height: 30px;
+    border: none;
+    background-color: rgb(97, 1, 1);
+    border-radius: 5px;
+
+}
+.lop:focus{
+    border: none;
+    outline: none;
+}
+
+.lop::placeholder{
+    text-transform: uppercase;
+    color: rgb(210, 210, 228);
+}
+
+
+.or{
+    position: relative;
+    top: 250px;
+    right: 380px;
+    width: 200px;
+    height: 50px;
+
+}
+
+
+
+p{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+
+.ok{
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+
+    
+    
+}

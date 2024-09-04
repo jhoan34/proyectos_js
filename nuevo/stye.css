@@ -1,0 +1,28 @@
+body{
+    background-color: blue;
+
+
+}
+#keyboard-container{
+    
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+#arr {
+
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+
+
+}

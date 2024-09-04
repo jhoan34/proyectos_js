@@ -1,0 +1,70 @@
+/* Reset de márgenes y rellenos para el cuerpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales para la caja principal */
+.caja-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilos para la caja de mensajes */
+.mensaje {
+    flex: 1;
+    overflow-y: auto; /* Agrega desplazamiento vertical si los mensajes exceden la altura */
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre la caja de mensajes y el formulario */
+}
+
+/* Estilos para la caja del formulario */
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilos para los campos de entrada y botón en el formulario */
+.inp {
+    display: flex;
+    flex: 1;
+}
+
+.tec {
+    flex: 1;
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#env {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para cajas de mensajes izquierda y derecha */
+.derecha {
+    text-align: right;
+    background-color: #DCF8C6; /* Color de fondo para mensajes enviados */
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.isquierda {
+    text-align: left;
+    background-color: #EFEFEF; /* Color de fondo para mensajes recibidos */
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+.f{
+    
+    visibility: hidden;
+}

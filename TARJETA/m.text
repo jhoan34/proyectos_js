@@ -1,0 +1,15 @@
+
+inputCard.addEventListener("keydown", (e) => {
+
+    if(e.key === "tab"){
+        return;
+
+    }
+
+    e.preventDefault()
+    handlerInput(maskNumber, e.key, cardNumber)
+    inputCard.value = cardNumber.join("")
+    
+
+    
+})

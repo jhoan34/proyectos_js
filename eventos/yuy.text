@@ -1,0 +1,82 @@
+
+let numero = 0  
+const p = document.querySelector("#fg");
+document.querySelector("#cv").addEventListener("click", (e) =>{
+    e.preventDefault()
+
+    numero++;
+
+    p.textContent = numero
+ 
+  
+
+  
+
+
+    
+})
+    
+const bAdd = document.querySelector("#bAdd");
+
+bAdd.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const eventName = document.querySelector("#eventName").value;
+  const eventDate = document.querySelector("#eventDate").value;
+
+  if (eventName !== "" && eventDate !== "") {
+    // Vacía los campos de entrada
+    document.querySelector("#eventDate").value = "";
+    document.querySelector("#eventName").value = "";
+
+    // Renderiza el nuevo evento
+    const resultHTML = renderEvents(eventDate, eventName);
+
+    // Agrega el nuevo evento al contenedor
+    document.querySelector("#tasksContainer").innerHTML += resultHTML;
+    borrar()
+  }
+});
+
+function renderEvents(fecha, input) {
+  let f = new Date(),
+    dia = f.getDate(),
+    mes = f.getMonth() + 1,
+    anio = f.getFullYear(),
+    diaSemana = f.getDay();
+
+    console.log(`${dia}-${mes}-${anio}`);
+
+  const dateArr = fecha.split("");
+  const jk = dateArr.slice(8, 10).join("");
+  const total = jk - dia;
+
+  const resultHTML = `
+    <div class="task">
+      <div class="days"><span class="days-number">${total}</span><span class="days-text">días</span></div>
+      <div class="event-name">${input}</div>
+      <div class="event-date">${fecha}</div>
+      <div class="actions">
+        <button class="bDelete">Eliminar</button>
+      </div>
+    </div>`;
+
+
+
+  return resultHTML;
+}
+
+
+function borrar() {
+    document.querySelectorAll(".bDelete").forEach((button) => {
+        button.addEventListener("click", (e) => {
+            const tarea = e.target.closest(".task");
+
+            // Elimina el elemento de tarea
+            tarea.remove();
+        });
+      });
+
+  
+
+}

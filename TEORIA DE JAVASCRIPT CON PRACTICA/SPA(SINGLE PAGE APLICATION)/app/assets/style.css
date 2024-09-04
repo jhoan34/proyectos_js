@@ -1,0 +1,110 @@
+.header {
+    position: sticky;
+    background-color: rgb(41, 46, 46);
+    display: grid;
+    grid-template-columns: 100px;
+    justify-content: center;
+    gap: 20px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 20px;
+    justify-content: center;
+
+}
+.header .title {
+    text-decoration: none;
+}
+
+.title:hover {
+    color: brown;
+}
+
+.img-postcard{
+    margin: 20px;
+    width: 80%;
+}
+
+.title-2{
+    text-align: center;
+}
+
+.p-padre{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.p-padre p,a{
+    text-align: center;
+
+}
+
+.grid-fluid{
+    margin: 1rem auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
+.post-card {
+    display: grid;
+    justify-content: center;
+    border: 1px solid red;
+   
+    
+}
+
+
+.post-page{
+    margin: auto;
+    background-color: rgb(150, 150, 150);
+    padding: 1rem;
+}
+
+.post-page aside {
+    margin: auto;
+    width: 60%; 
+    text-align: center;
+}
+
+.post-page hr {
+    border: thin solid red;
+    margin: 2rem auto;
+    width: 80%;
+
+}
+
+.post-page time {
+    margin: 1rem auto;
+    display: block;
+
+}
+
+.post-page article {
+    padding: 0.2rem;
+}
+
+.post-page img,
+.post-page audio,
+.post-page iframe
+.post-page video{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+
+}
+
+.error {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(161, 11, 11);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

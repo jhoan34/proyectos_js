@@ -1,0 +1,1 @@
+exercism download --track=javascript --exercise=rectangles

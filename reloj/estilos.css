@@ -1,0 +1,61 @@
+body {
+    background-image:  url(./3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+.caja-prinsipal{
+    position: relative;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid red;
+    border-radius: 15px;
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.fecha{
+    position: absolute;
+    color: aliceblue;
+    font-size: medium;
+    background-color: blueviolet;
+
+}
+
+.o{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 25%;
+    top: 100px;
+    font-size: 80px
+}
+
+.lp:hover{
+    background-color: aqua;
+}
+
+op{
+    color: antiquewhite;
+    border: 3px solid red;
+}

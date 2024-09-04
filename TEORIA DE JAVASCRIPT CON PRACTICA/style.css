@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    text-align: center;
+
+}
+#primera{
+    border: 3px solid red;
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+
+}
+
+.op {
+    width: 100px;
+    height: 25px;
+    outline: none;
+    background-color: rgb(76, 87, 87);
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+
+.op::placeholder{
+    font-size: 10px;
+}
+
+#btn{
+    width: 100px;
+    margin-top: 30px;
+    background-color: rgb(56, 49, 49);
+    color: aliceblue;
+}
+
+.q{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.estilo {
+
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: rgb(34, 32, 32);
+    width: 70%;
+    height: 270px;
+
+
+
+}
+
+.estilo .ti {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: red
+    
+}
+
+.as{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: 170px;
+    
+
+
+}
+
+.x{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 100);
+}
+
+.x{
+
+}

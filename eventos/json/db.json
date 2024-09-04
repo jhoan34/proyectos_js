@@ -1,0 +1,36 @@
+{
+    "procesadores": [
+        {
+            "id": 1,
+            "marca": "amd",
+            "modelo":"ryzen7"
+
+        },
+
+        {
+            "id": 2,
+            "marca": "amd",
+            "modelo":"ryzen7"
+
+        }
+    ],
+
+    "ram": [
+        {
+            "id": 1,
+            "marca": "kingston",
+            "frecuencia":"3200mhz"
+
+        },
+
+        {
+            "id": 2,
+            "marca": "corsair",
+            "frecuencia":"3200mhz"
+
+        }
+    ]
+
+
+    
+}
